@@ -2,7 +2,7 @@ const Home = async () => {
 
   return (
     <main className="">
-      <div className="">Home</div>
+      <div className="text-4xl">Home</div>
     </main>
   )
 }

@@ -1,25 +1,40 @@
-import { useState } from "react"
-import UserItem from "./UserItem"
-import { User } from "@/types"
-import { DndContext, DragEndEvent } from "@dnd-kit/core"
-import { SortableContext, arrayMove } from "@dnd-kit/sortable"
-import { restrictToVerticalAxis } from "@dnd-kit/modifiers"
+import { useState } from 'react'
+import UserItem from './UserItem'
+import { User } from '@/types'
+import { DndContext, DragEndEvent } from '@dnd-kit/core'
+import { SortableContext, arrayMove } from '@dnd-kit/sortable'
+import { restrictToVerticalAxis } from '@dnd-kit/modifiers'
 
 const dummyData: User[] = [
   {
     id: 1,
-    name: "John Doe",
-    email: "john@example.com",
+    name: 'John Doe',
+    email: 'johndoe@example.com',
   },
   {
     id: 2,
-    name: "Jane Smith",
-    email: "jane@example.com",
+    name: 'Jane Smith',
+    email: 'janesmith@example.com',
   },
   {
     id: 3,
-    name: "Alice Johnson",
-    email: "alice@example.com",
+    name: 'Alice Johnson',
+    email: 'alicejohnson@example.com',
+  },
+  {
+    id: 4,
+    name: 'John Smith',
+    email: 'johnsmith@example.com',
+  },
+  {
+    id: 5,
+    name: 'Jane Doe',
+    email: 'janedoe@example.com',
+  },
+  {
+    id: 6,
+    name: 'Alice In Wonderland',
+    email: 'aliceinwonderland@example.com',
   },
 ]
 
@@ -37,7 +52,7 @@ const UserList = () => {
   }
 
   return (
-    <div className="max-w-2xl mx-auto grid gap-2 my-10">
+    <div className="max-w-2xl mx-auto grid gap-2 mt-4">
       <h2 className="text-2xl font-bold-mb-4">User List</h2>
       <DndContext
         modifiers={[restrictToVerticalAxis]}

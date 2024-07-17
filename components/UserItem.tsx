@@ -1,6 +1,7 @@
-import { User } from "@/types"
-import { useSortable } from "@dnd-kit/sortable"
-import { CSS } from "@dnd-kit/utilities"
+import { User } from '@/types'
+import { useSortable } from '@dnd-kit/sortable'
+import { CSS } from '@dnd-kit/utilities'
+import { RxDragHandleDots2 } from 'react-icons/rx'
 
 type UserItemProps = {
   user: User
@@ -28,7 +29,7 @@ const UserItem = (props: UserItemProps) => {
         <p className="text-gray-600">{email}</p>
       </div>
       <button {...attributes} {...listeners} className="cursor-move touch-none">
-        drag
+        <RxDragHandleDots2 />
       </button>
     </div>
   )

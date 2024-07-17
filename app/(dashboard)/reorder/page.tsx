@@ -13,18 +13,10 @@ const ReorderPage = () => {
   ])
 
   return (
-    <UserList />
-    // <div className="mx-4 mt-4">
-    //   <h1 className="text-3xl font-bold text-center">Reorder List Page</h1>
-    //   <h3>Drag items from one list to the other</h3>
-    //   <DndContext>
-    //     <SortableContext items={items}>
-    //       {items.map((item) => (
-    //         <div key={item.id}>{item.id}</div>
-    //       ))}
-    //     </SortableContext>
-    //   </DndContext>
-    // </div>
+    <main className="">
+      <div className="text-4xl">Reorder</div>
+      <UserList />
+    </main>
   )
 }
 
