@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.scrollNew:hover {
+  overflow-x: scroll;
+  scrollbar-color: rgb(75, 75, 75) rgb(0, 0, 0);
+  scrollbar-width: thin;
+}
